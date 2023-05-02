@@ -7,41 +7,36 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/styles.css">
 
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-  <main>
-    <div>
-      <h2>Day</h2>
-      <input type="text" name="day" id="day" placeholder="DD">
+  <main class="main">
+    <div class="container">
+      <form class="form-container">
+        <label for="day">Day</label>
+        <input type="text" name="day" id="day" placeholder="DD">
 
-      <h2>Month</h2>
-      <input type="text" name="" id="" placeholder="MM">
+        <label for="month">Month</label>
+        <input type="text" name="month" id="month" placeholder="MM">
 
-      <h2>Year</h2>
-      <input type="text" placeholder="YYYY">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year" placeholder="YYYY">
+      </form>
 
-    </div>
-
-    <p><span>--</span> years</p>
-    <p><span>--</span> months</p>
-    <p><span>--</span> days</p>
+      <div class="text-container">
+        <p class="tx-title tx-years"><span class="tx-result">--</span> years</p>
+        <p class="tx-title tx-months"><span class="tx-result">--</span> months</p>
+        <p class="tx-title tx-days"><span class="tx-result">--</span> days</p>
+      </div>
     </div>
   </main>
 

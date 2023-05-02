@@ -15,8 +15,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [https://github.com/Creatordante/age-calculator-app-main](https://github.com/Creatordante/age-calculator-app-main)
-- Live Site URL: []()
+- Solution URL: [Age calculator github](https://github.com/Creatordante/age-calculator-app-main)
+- Live Site URL: [Age calculator site]()
 
 ### Built with
 

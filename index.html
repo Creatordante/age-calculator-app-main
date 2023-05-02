@@ -22,20 +22,27 @@
   <main class="main">
     <div class="container">
       <form class="form-container">
-        <label for="day">Day</label>
-        <input type="text" name="day" id="day" placeholder="DD">
 
-        <label for="month">Month</label>
-        <input type="text" name="month" id="month" placeholder="MM">
+        <div class="input-container">
+          <label for="day">Day</label>
+          <input type="text" name="day" id="day" placeholder="DD">
+        </div>
 
-        <label for="year">Year</label>
-        <input type="text" name="year" id="year" placeholder="YYYY">
+        <div class="input-container">
+          <label for="month">Month</label>
+          <input type="text" name="month" id="month" placeholder="MM">
+        </div>
+
+        <div class="input-container">
+          <label for="year">Year</label>
+          <input type="text" name="year" id="year" placeholder="YYYY">
+        </div>
+        <button class="btn" id="btn"><img src="/assets/images/icon-arrow.svg" alt="submit button"></button>
       </form>
-
-      <div class="text-container">
-        <p class="tx-title tx-years"><span class="tx-result">--</span> years</p>
-        <p class="tx-title tx-months"><span class="tx-result">--</span> months</p>
-        <p class="tx-title tx-days"><span class="tx-result">--</span> days</p>
+      <div class="txt-container">
+        <p class="txt-title"><span class="txt-result" id="txt-years">--</span> years</p>
+        <p class="txt-title"><span class="txt-result" id="txt-months">--</span> months</p>
+        <p class="txt-title"><span class="txt-result" id="txt-days">--</span> days</p>
       </div>
     </div>
   </main>

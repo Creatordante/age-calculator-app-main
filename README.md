@@ -1,6 +1,6 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - Age calculator app solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,8 +15,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/Creatordante/results-summary-component-main](https://github.com/Creatordante/results-summary-component-main)
-- Live Site URL: [https://results-summary-component-creatordant.netlify.app/](https://results-summary-component-creatordant.netlify.app/)
+- Solution URL: [https://github.com/Creatordante/age-calculator-app-main](https://github.com/Creatordante/age-calculator-app-main)
+- Live Site URL: []()
 
 ### Built with
 

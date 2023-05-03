@@ -70,6 +70,7 @@ body {
 }
 
 .input-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -146,6 +147,7 @@ body {
 .btn img {
   width: 2.2rem;
   height: 2.2rem;
+  pointer-events: none;
 }
 @media (min-width: 768px) {
   .btn {
@@ -190,6 +192,32 @@ body {
   .txt-result {
     font-size: 10rem;
   }
+}
+
+/*   Error MSG   */
+.error {
+  color: var(--light-red);
+}
+
+.error-msg {
+  font-size: 0.7rem;
+  position: absolute;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--light-red);
+  left: 0;
+  bottom: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .error-msg {
+    font-size: 1rem;
+    bottom: 3rem;
+  }
+}
+
+.input-container .error-border {
+  border: 1px solid var(--light-red);
 }
 
 /* Footer */

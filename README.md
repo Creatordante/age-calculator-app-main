@@ -16,11 +16,12 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [Age calculator github](https://github.com/Creatordante/age-calculator-app-main)
-- Live Site URL: [Age calculator site]()
+- Live Site URL: [Age calculator site](https://age-calculator-app-creatordante.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
+- Javascript
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow

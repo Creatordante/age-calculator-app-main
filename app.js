@@ -7,6 +7,8 @@ const txtDay = document.getElementById("day");
 const txtMonth = document.getElementById("month");
 const txtYear = document.getElementById("year");
 
+// Current date
+const currentDate = new Date();
 
 // Event Listeners
 
@@ -24,9 +26,6 @@ function validateform(){
 
     // if all the information is valid Should be 0
     let validInputs = 0;
-
-    // Current date
-    const currentDate = new Date();
 
     //User input data
     const day = parseInt(txtDay.value) ;
@@ -59,21 +58,44 @@ function validateform(){
                 validInputs += 1;
                 errorMsg(userInput,"Must be a valid date");
             }
+            
         }
         else if (userInput.lastElementChild.id === "month" && parseInt(userInput.lastElementChild.value) > 12){
             validInputs += 1;
             errorMsg(userInput,"Must be a valid month");
-            return;     
+            return;
         }
         else if (userInput.lastElementChild.id === "year" && parseInt(userInput.lastElementChild.value) > currentDate.getFullYear() ){
             validInputs += 1;
             errorMsg(userInput,"Must be in the past");
             return;
         }
+        else if (userInput.lastElementChild.id === "year" && parseInt(userInput.lastElementChild.value) === currentDate.getFullYear() ){
+         
+            if(parseInt(txtMonth.value) === (currentDate.getMonth() + 1)){
+                if(parseInt(txtDay.value) > currentDate.getDate()){
+                    validInputs += 1;
+                    errorMsg(userInput,"Must be in the past");
+                    return;
+                }
+                else if ((parseInt(txtDay.value) === currentDate.getDate())){
+                    validInputs += 1;
+                    errorMsg(userInput,"Must be in the past");
+                    return;
+                }
+            }
+            else if (parseInt(txtMonth.value) > (currentDate.getMonth() + 1)){
+                validInputs += 1;
+                errorMsg(userInput,"Must be in the past");
+                return;
+            }
+        }
     });
 
+    // If all user inputs contain valid information 
+
     if(validInputs === 0){
-        console.log("All valid");
+        userInfoHTML();
     }
 }
 
@@ -101,5 +123,17 @@ function cleanHtml(){
             el.removeChild(el.lastElementChild);
         }
     });
+}
+
+function userInfoHTML(){
+    const titleYears = document.getElementById("txt-years");
+    const titleMonths = document.getElementById("txt-months");
+    const titleDays = document.getElementById("txt-days");
+
+    // Change text content in titles
+
+    titleYears.innerText = (currentDate.getMonth() + 1) > parseInt(txtMonth.value) || (currentDate.getMonth() + 1) === parseInt(txtMonth.value) ?  currentDate.getFullYear() - parseInt(txtYear.value) : (currentDate.getFullYear() - parseInt(txtYear.value)) - 1 ;
+    titleMonths.innerText = (currentDate.getMonth() + 1) > parseInt(txtMonth.value) || (currentDate.getMonth() + 1) === parseInt(txtMonth.value) ? (currentDate.getMonth() + 1) - parseInt(txtMonth.value) : parseInt(txtMonth.value) - (currentDate.getMonth() + 1);
+    titleDays.innerText = currentDate.getDate() >  parseInt(txtDay.value) || currentDate.getDate() === parseInt(txtDay.value) ? currentDate.getDate() - parseInt(txtDay.value) : parseInt(txtDay.value) - currentDate.getDate();
 }
 

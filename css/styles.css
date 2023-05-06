@@ -40,7 +40,7 @@ body {
 
 /*  heading  */
 .heading {
-  display: none;
+  visibility: hidden;
 }
 
 /*   App Container   */

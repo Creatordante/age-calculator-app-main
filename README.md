@@ -11,7 +11,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](/assets/images/screenshot.png)
+![](/assets/images/Screenshot%20.png)
 
 ### Links
 

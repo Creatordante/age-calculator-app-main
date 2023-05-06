@@ -38,7 +38,10 @@ body {
   align-items: center;
 }
 
-/*  Main  */
+/*  heading  */
+.heading {
+  display: none;
+}
 
 /*   App Container   */
 .container {
